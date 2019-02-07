@@ -92,7 +92,7 @@ In order to edit the specific scheme file, you want to amend, please select the 
 <!-- ZZZ
 For the [Sublime Text][51] editor the schemes can be installed easily using [Package Control][53] and searching for the `Color Scheme - Perv` package in the official repository.
  -->
-Otherwise, first you need to locate your [Sublime Text][51] packages directory--use the `Preferences &#8594; Browse Packages` menu from within [Sublime Text][51], if you don't know where the directory is located.
+Otherwise, first you need to locate your [Sublime Text][51] packages directory--use the `Preferences -> Browse Packages` menu from within [Sublime Text][51], if you don't know where the directory is located.
 
 Now either create a `Color Scheme - Perv` folder within this directory, and copy the contents of the GitHub repository, or clone the repository using the Git software within the packages directory:
 
@@ -150,12 +150,12 @@ A lot thanks to my family at [Mayflower][91] for all their help and support! Add
 [issues]: https://github.com/micck/perv-colorscheme/issues
 [donate]: https://ZZZ.not.yet.known/
 
-[release badge]: https://img.shields.io/github/release/micck/perv-colorscheme.svg
-[sublime text badge]: https://img.shields.io/badge/Sublime%20Text-v3-green.svg?logo=#272822
-[licence badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[stars badge]: https://img.shields.io/github/stars/micck/perv-colorscheme.svg
-[issues badge]: https://img.shields.io/github/issues/micck/perv-colorscheme.svg
-[paypal badge]: https://img.shields.io/badge/paypal-donate-ff69b4.svg
+[release badge]: https://img.shields.io/github/release/micck/perv-colorscheme.svg?style=flat
+[sublime text badge]: https://img.shields.io/badge/Sublime%20Text-v3-orange.svg?style=flat&logo=sublime%20text
+[licence badge]: https://img.shields.io/badge/license-BSD%203--Clause-blue.svg?style=flat
+[stars badge]: https://img.shields.io/github/stars/micck/perv-colorscheme.svg?style=flat
+[issues badge]: https://img.shields.io/github/issues/micck/perv-colorscheme.svg?style=flat
+[paypal badge]: https://img.shields.io/badge/paypal-donate-ff69b4.svg?style=flat
 
 [11]: https://packagecontrol.io/packages/knockdown
 [12]: https://packagecontrol.io/packages/MarkdownEditing
