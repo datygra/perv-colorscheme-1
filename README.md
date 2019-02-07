@@ -10,7 +10,7 @@ The color schemes are created so that the same code in different languages shoul
 
 The project started a couple of years back, when there were nearly to none color schemes, which covered the syntax I was interested in. The majority of the available color schemes back then, even didn't highlight the settings (`JSON`) or tmTheme files (`XML`).
 
-This version is a complete rewrite from scratch in the new JSON Format (`.sublime-color-scheme`) for Sublime Text. It is heavily customized for the standard syntax highlighter for `Python`, `JavaScript`, `Ruby`, `PHP`, `Java`, `Rust`, `C++`, `Go`, `CSS`, `reStructuredText` and `Markdown`.
+This version is a complete rewrite from scratch (of the v1 version) in the new JSON Format (`.sublime-color-scheme`) for Sublime Text. It is heavily customized for the standard syntax highlighter for `Python`, `JavaScript`, `Ruby`, `PHP`, `Java`, `Rust`, `C++`, `Go`, `CSS`, `reStructuredText` and `Markdown`.
 
 <!-- ZZZ for later usage
 
@@ -108,12 +108,12 @@ In the future, I'm going to adapt the color scheme to other editors (currently p
 ### Version 2.0 ###
 
 * completely rewritten from scratch. Mainly retained the coloring, but did a few changes:
-  * brackets are now always white (those glitches are gone :relieved:)
-  * angular brackets for tags (they have the same color as the respective tag)
-  * more consistency for module or function calls (always the some color; italics for argument definition, normal font for call)
+  * less colors
+  * brackets of functions have the same color as the function, all others are white
+  * angular brackets for tags have the same color as the tag
+  * more consistency for module or function calls
   * classes, modules, objects and entities now share the same color
-* HTML: DocType
-* Comments in Moonlight are darker now
+* Comment Docblocks now have a different highlighting as normal comments, so they are more easily to identify
 * …
 
 ## Contribute ##
@@ -131,9 +131,9 @@ If you have any kind of problems or enhancement requests, please don't hesitate 
 
 ## Thanks ##
 
-Very big thanks goes to @dsander and @elseym for their invaluable support and feedback all the time. :yellow_heart:
+Very big thanks goes to [@dsander][dosa] and [@elseym][siwa] for their invaluable support and feedback all the time:yellow_heart:.
 
-Also, thanks to my family at [Mayflower][91] for all their help and support! Additionally I would like to thank my friends at [FlavourSys][92] for their support to release the first version.
+Also, thanks to my family at [Mayflower][91] for all their help and support! Additionally I would like to thank my friends at [FlavourSys][92] for their support to release the first version to :octocat:.
 
 *Always have fun:sunny: in what you're doing and* "DON'T PANIC"...:rocket:
 
@@ -144,13 +144,13 @@ Also, thanks to my family at [Mayflower][91] for all their help and support! Add
 [md]: https://en.wikipedia.org/wiki/Myth_Directions
 [release]: https://github.com/micck/perv-colorscheme/releases
 [sublime-text]: http://www.sublimetext.com/
-[licence]: <LICENSE.txt>
+[licence]: <LICENSE>
 [repo]: https://github.com/micck/perv-colorscheme
 [issues]: https://github.com/micck/perv-colorscheme/issues
 [paypal]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P3BWGA5FT2SY6
 
 [release badge]: https://img.shields.io/github/release/micck/perv-colorscheme.svg
-[sublime text badge]: https://img.shields.io/badge/Sublime%20Text-v2%2C%20v3-green.svg
+[sublime text badge]: https://img.shields.io/badge/Sublime%20Text-v3-green.svg?logo=#272822
 [licence badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [stars badge]: https://img.shields.io/github/stars/micck/perv-colorscheme.svg
 [issues badge]: https://img.shields.io/github/issues/micck/perv-colorscheme.svg
@@ -197,6 +197,8 @@ Also, thanks to my family at [Mayflower][91] for all their help and support! Add
 
 [Scope Hunter]: https://packagecontrol.io/packages/ScopeHunter
 
+[dosa]: https://github.com/dsander
+[siwa]: https://github.com/elseym
 [90]: http://blog.hohmann.org/blog/2013/04/15/perv-schemes-color-table/
 [91]: https://www.mayflower.de/
 [92]: http://www.flavoursys.com
