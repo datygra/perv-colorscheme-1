@@ -132,11 +132,11 @@ If you have any kind of problems or enhancement requests, please don't hesitate 
 
 ## Thanks ##
 
-Very big thanks goes to [@dsander][dosa] and [@elseym][siwa] for their invaluable support and feedback all the time:yellow_heart:.
+Very big thanks goes to [@dsander][dosa] and [@elseym][siwa] for their invaluable support and feedback all the time. :yellow_heart:
 
-Also, thanks to my family at [Mayflower][91] for all their help and support! Additionally I would like to thank my friends at [FlavourSys][92] for their support to release the first version to :octocat:.
+A lot thanks to my family at [Mayflower][91] for all their help and support! Additionally I would like to thank my friends at [FlavourSys][92] for their help in releasing the first version to :octocat:.
 
-*Always have fun:sunny: in what you're doing and* "DON'T PANIC"...:rocket:
+*Always have fun:sunny: in what you're doing and* "DON'T PANIC"... :rocket:
 
 **Enjoy!**
 
