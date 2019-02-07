@@ -1,0 +1,26 @@
+{
+	"name": "Color Scheme - Perv",
+	"displayName": "Color Scheme - Perv",
+	"description": "A color scheme where the code should look the same in different languages (customized for Markdown, GFM, Python, JavaScript, Ruby, PHP, Java, Rust, Go, C++, HTML, CSS, SASS/SCSS, JSON, Git, GitGutter, DIFF, SublimeLinter among others).",
+	"theme": "syntax",
+	"version": "2.0.0",
+	"repository": "https://github.com/micck/perv-colorscheme",
+	"publisher": "Mick Hohmann",
+	"license": "BSD-3-Clause",
+	"engines": {
+		"atom": ">=1.13.0",
+		"vscode": ">=1.10.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Color Scheme - Perv",
+				"uiTheme": "vs-dark",
+				"path": "./Perv.color-theme.json"
+			}
+		]
+	}
+}
