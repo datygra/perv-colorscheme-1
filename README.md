@@ -2,7 +2,8 @@
 
 > "**Actually, as a native from Perv, I prefer to be called a '_Pervect_'**" <_Aahz:japanese_ogre: in [Myth Directions][md]_>
 
-[![release badge]][release] [![sublime text badge]][sublime-text] [![Package Control](https://packagecontrol.herokuapp.com/downloads/Perv%20-%20Color%20Scheme.svg?color=50C32E)](https://packagecontrol.io/packages/Perv%20-%20Color%20Scheme) [![licence badge]][licence] [![stars badge]][repo] [![issues badge]][issues] [![paypal badge]][paypal]
+[![release badge]][release] [![sublime text badge]][sublime-text] [![Package Control](https://packagecontrol.herokuapp.com/downloads/Perv%20-%20Color%20Scheme.svg?color=50C32E)](https://packagecontrol.io/packages/Perv%20-%20Color%20Scheme) [![licence badge]][licence] [![stars badge]][repo] [![issues badge]][issues]
+<!-- [![donation badge]][donate] -->
 
 ## Introduction ##
 
@@ -139,15 +140,15 @@ Also, thanks to my family at [Mayflower][91] for all their help and support! Add
 
 **Enjoy!**
 
-<!-- reference section -->
---------------------------
+<!-- ------------------------------------ reference section ------------------------------------ -->
+
 [md]: https://en.wikipedia.org/wiki/Myth_Directions
 [release]: https://github.com/micck/perv-colorscheme/releases
 [sublime-text]: http://www.sublimetext.com/
 [licence]: <LICENSE>
 [repo]: https://github.com/micck/perv-colorscheme
 [issues]: https://github.com/micck/perv-colorscheme/issues
-[paypal]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P3BWGA5FT2SY6
+[donate]: https://ZZZ.not.yet.known/
 
 [release badge]: https://img.shields.io/github/release/micck/perv-colorscheme.svg
 [sublime text badge]: https://img.shields.io/badge/Sublime%20Text-v3-green.svg?logo=#272822
