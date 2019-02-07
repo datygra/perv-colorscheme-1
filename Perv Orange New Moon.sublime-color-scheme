@@ -1,0 +1,295 @@
+// ======================================================================
+// Perv Orange New Moon Color scheme - version 2.0
+// ======================================================================
+// A Sublime Text 3
+// Copyright (c) 2012-2019 Mick Hohmann.
+// Released under the MIT License <http://opensource.org/licenses/MIT>
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Find more Sublime Text stuff at : https://github.com/micck/
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+{
+    "name": "Perv Orange New Moon",
+    "author": "Mick Hohmann",
+    "variables":
+    {
+        "perv_foreground": "hsl(0, 0%, 80%)",
+        "perv_background": "hsl(0, 0%, 7%)",
+        "perv_caret": "hsl(0, 100%, 100%)",
+        "perv_selection": "hsla(0, 0%, 73%, 0.25)",
+        "perv_find_hl_fg": "hsl(0, 0%, 0%)",
+        "perv_find_hl_bg": "hsl(47, 100%, 79%)",
+        "perv_comments": "hsl(290, 3%, 43%)",
+        "perv_main": "hsl(38, 100%, 50%)",
+        "perv_functions": "hsl(17, 100%, 53%)",
+        "perv_function_parameters": "hsl(15, 69%, 67%)",
+        "perv_builtin_functions": "hsl(5, 100%, 57%)",
+        "perv_classes": "hsl(215, 100%, 60%)",
+        "perv_class_parameters": "hsl(240, 100%, 78%)",
+        "perv_type_definitions": "hsl(52, 96%, 58%)",
+        "perv_strings": "hsl(77, 31%, 52%)",
+        "perv_constants": "hsl(75, 100%, 55%)",
+        "perv_constant_chars": "hsl(65, 100%, 57%)",
+// ZZZ ----------------------------------------------------
+        "perv_cyan": "hsla(180, 100%, 50%, 0.4)",
+        "perv_magenta": "hsla(280, 100%, 40%, 0.4)",
+// ZZZ ----------------------------------------------------
+        "perv_pink": "hsl(295, 50%, 57%)"
+    },
+    "globals":
+    {
+        // General
+        "background": "var(perv_background)",
+        "foreground": "var(perv_foreground)",
+        "caret": "var(perv_caret)",
+        "line_highlight": "color(var(perv_comments) alpha(0.5))",
+        // Accents
+        "misspelling": "var(perv_builtin_functions)",
+        "fold_marker": "var(perv_find_hl_bg)",
+        "minimap_border": "var(perv_main)",
+        "accent": "var(perv_main)",
+        // Gutter
+        "gutter": "color(var(perv_comments) alpha(0.2))",
+        "gutter_foreground": "var(perv_comments)",
+        // Selection
+        "selection": "var(perv_selection)",
+        "selection_border": "var(perv_main)",
+        "selection_corner_radius": "8", // Range?
+        // Find
+        "highlight": "color(var(perv_main) alpha(0.6))",
+        "find_highlight": "var(perv_find_hl_bg)",
+        "find_highlight_foreground": "var(perv_find_hl_fg)",
+        // Guides
+        "active_guide": "color(var(perv_main) alpha(0.8))",
+        "stack_guide": "color(var(perv_main) alpha(0.4))",
+        // Brackets
+        "brackets_options": "bold underline foreground", // underline stippled_underline squiggly_underline foreground bold italic
+        "brackets_foreground": "color(var(perv_builtin_functions) lightness(- 10%))",
+        "bracket_contents_options": "underline foreground", // underline stippled_underline squiggly_underline foreground
+        "bracket_contents_foreground": "color(var(perv_main) alpha(0.75))",
+        // Tags
+        "tags_options": "bold underline", // underline stippled_underline squiggly_underline foreground
+        "tags_foreground": "color(var(perv_main) alpha(0.75))"
+    },
+    "rules":
+    [
+        // Based of the minimum recommended scopes (heavily modified)
+        {
+            "name": "Main: Comments",
+            "scope": "comment",
+            "foreground": "var(perv_comments)",
+            "font_style": "italic"
+        },
+// ZZZ ----------------------------------------------------
+        {
+            "name": "Main: Keywords, Tags, …",
+            "scope": "keyword, entity.name.tag, text punctuation.definition.tag",
+            "foreground": "var(perv_main)"
+        },
+        {
+            "name": "Main: Definition of Classes, Functions and other Storage Types",
+            "scope": "storage.type.function, storage.type.class, storage.type.keyword.function, keyword.control.module, keyword.control.def",
+            "foreground": "var(perv_main)",
+            "font_style": "italic"
+        },
+        {
+            "name": "ZZZ - Main: Keywords 1",
+            "scope": "storage.modifier.js, storage.modifier.java, source.php storage.modifier, storage.modifier.rust", // ZZZ Done
+            "foreground": "var(perv_main)"
+        },
+        { // integrate
+            "name": "ZZZ - Main: Keywords 2",
+            "scope": "meta.namespace storage.modifier", // ZZZ Done
+            "foreground": "var(perv_main)"
+        },
+// ZZZ ----------------------------------------------------
+        {
+            "name": "Main: Function Names",
+            "scope": "entity.name.function, meta.function-call variable.function",
+            "foreground": "var(perv_functions)"
+        },
+        {
+            "name": "Main: Function Brackets",
+            "scope": "source meta.function punctuation.section - meta.group - punctuation.section.block",
+            "foreground": "var(perv_functions)"
+        },
+        {
+            "name": "Main: Function Parameters",
+            "scope": "meta.function.parameters, variable.parameter, entity.other.attribute-name",
+            "foreground": "var(perv_function_parameters)"
+        },
+        {
+            "name": "Main: Builtin, Support & Library Functions",
+            "scope": "support.function, meta.function-call support, meta.property.object - meta.block, support.function.var",
+            "foreground": "var(perv_builtin_functions)"
+        },
+        {
+            "name": "Main: Builtin, Support & Library Function Brackets",
+            // "scope": "meta.function.parameters punctuation.section.group, meta.function-call punctuation.section - meta.structure",
+            "scope": "meta.function.parameters punctuation.section.group, meta.function-call punctuation.section - meta.structure - meta.parens",
+            "foreground": "var(perv_builtin_functions)"
+        },
+        {  // ZZZ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+            "name": "Magenta Test Scope",
+            "scope": "source.css support.type.property-name",
+            "background": "var(perv_caret)",
+            "foreground": "#F0F"
+        }, // ZZZ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ZZZ ----------------------------------------------------
+        {
+            "name": "Main: Class",
+            // "scope": "entity.name.class, entity.name.module, support.class",
+            "scope": "entity.name - entity.name.constant, support.class",
+            "foreground": "var(perv_classes)"
+        },
+        {
+            "name": "Main: Class Brackets",
+            "scope": "source.python meta.class punctuation.section",
+            "foreground": "var(perv_classes)"
+        },
+        // {
+        //     "name": "Main: Entity.Name", // ZZZ What's this used for?
+        //     "scope": "entity.name",
+        //     "foreground": "#F0F"
+        // },
+        // {  // ZZZ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+        //     "name": "Magenta Test Scope",
+        //     "scope": "source meta.class punctuation.section",
+        //     "background": "var(perv_magenta)",
+        //     "foreground": "var(perv_caret)"
+        // }, // ZZZ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        // {  // ZZZ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+        //     "name": "Cyan Test Scope",
+        //     "scope": "entity.name.label",
+        //     "background": "var(perv_cyan)",
+        //     "foreground": "var(perv_caret)"
+        // }, // ZZZ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        // { // integrate
+        //     "name": "ZZZ - Main: Classes & Namespaces",
+        //     "scope": "entity.name.namespace",
+        //     "foreground": "var(perv_classes)"
+        // },
+        { // integrate
+            "name": "ZZZ - Main: Inherited-Class & Class Parameters",
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(perv_class_parameters)"
+        },
+// ZZZ ----------------------------------------------------
+        {
+            "name": "Main: Type Definitions",
+            "scope": "storage.type, support.type - support.type.exception - support.type.object - support.type.package - meta.function.return-type, variable.other.readwrite punctuation.definition.variable",
+            "foreground": "var(perv_type_definitions)"
+        },
+        { // integrate
+            "name": "ZZZ - Main Type Definition",
+            "scope": "storage.modifier - meta.block - storage.modifier.array", // ZZZ Done
+            "foreground": "var(perv_type_definitions)"
+        },
+// ZZZ ----------------------------------------------------
+        {
+            "name": "Main: Variable",
+            "scope": "variable, entity.name.constant",
+            "font_style": "bold"
+        },
+// ZZZ ----------------------------------------------------
+        {
+            "name": "Main: String",
+            "scope": "string",
+            "foreground": "var(perv_strings)"
+        },
+// ZZZ ----------------------------------------------------
+        {
+            "name": "Main: Constant",
+            "scope": "constant",
+            "foreground": "var(perv_constants)"
+        },
+// ZZZ ----------------------------------------------------
+        {
+            "name": "Main: invalid",
+            "scope": "invalid",
+            "foreground": "var(perv_find_hl_fg)",
+            "background": "var(perv_main)"
+        },
+        {
+            "name": "Main: invalid.deprecated",
+            "scope": "invalid.deprecated",
+            "foreground": "var(perv_type_definitions)",
+            "background": "var(perv_builtin_functions)",
+            "font_style": "bold"
+        },
+// ZZZ ----------------------------------------------------
+        // Additional scopes
+        {
+            "name": "Comment: Block Documentation",
+            "scope": "comment.block.documentation",
+            "foreground": "color(var(perv_comments) lightness(+ 22%))", // ZZZ needs adjustment
+            "background": "color(var(perv_background) lightness(+ 7%))"
+            // "background": "color(var(perv_comments) alpha(0.3))"
+        },
+        {
+            "name": "Dictionary: Key",
+            "scope": "meta.structure.dictionary.key string, string entity.name.tag.yaml",
+            "foreground": "var(perv_foreground)"
+        },
+// ZZZ ----------------------------------------------------
+        {
+            "name": "Markup: Heading & Link Text",
+            "scope": "markup.heading, entity.name.section, text meta.image.reference, text meta.link, text meta.link string",
+            "foreground": "var(perv_foreground)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Markup: Punctuations",
+            "scope": "text punctuation - comment - constant - embedding",
+            "foreground": "color(var(perv_main) alpha(0.7))"
+            // "font_style": "bold"
+        },
+        {
+            "name": "Markup: Punctuations Inline",
+            "scope": "markup.bold punctuation, markup.italic punctuation, markup.strikethrough punctuation",
+            "foreground": "var(perv_foreground)"
+        },
+        {
+            "name": "Markup: Punctuations Table & Links",
+            "scope": "meta.table punctuation, markup.underline.link, text meta.image.reference constant, text meta.link.reference constant, text punctuation.definition.constant, text punctuation.definition.metadata, text punctuation.definition.location, text meta string.other.link.description, markup.other.table punctuation",
+            "foreground": "var(perv_comments)"
+        },
+        {
+            "name": "Markup: Link Definition",
+            "scope": "text meta.link.reference.def entity.name.reference, text meta.link.reference.def string.other.link",
+            "foreground": "var(perv_function_parameters)"
+        },
+        {
+            "name": "Markup: Raw Block",
+            "scope": "markup.raw, text meta.code-fence, markup.quote",
+            "background": "color(var(perv_background) lightness(+ 7%))"
+        },
+        {
+            "name": "Markup: Raw Inline",
+            "scope": "markup.raw.inline",
+            "background": "color(var(perv_background) lightness(+ 25%))"
+        },
+        {
+            "name": "Markup: Bold",
+            "scope": "markup.bold",
+            "font_style": "bold"
+        },
+        {
+            "name": "Markup: Italic",
+            "scope": "markup.italic",
+            "font_style": "italic"
+        },
+        {
+            "name": "Markup: Bold & Italic",
+            "scope": "markup.bold markup.italic",
+            "font_style": "bold italic"
+        },
+// ZZZ ----------------------------------------------------
+        // Plugin specific scopes
+        {
+            "name": "Plugin: WordHighlight",
+            "scope": "wordhighlight",
+            "foreground": "color(var(perv_find_hl_bg) blend(#888 50%))",
+            "background": "color(var(perv_comments) alpha(0.3))"
+        }
+    ]
+}
