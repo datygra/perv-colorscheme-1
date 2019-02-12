@@ -5,6 +5,14 @@
 [![release badge]][release] [![sublime text badge]][sublime-text] [![Package Control](https://packagecontrol.herokuapp.com/downloads/Perv%20-%20Color%20Scheme.svg?color=50C32E)](https://packagecontrol.io/packages/Perv%20-%20Color%20Scheme) [![licence badge]][licence] [![stars badge]][repo] [![issues badge]][issues]
 <!-- [![donation badge]][donate] -->
 
+------------------------------------------
+
+> **This version is still an alpha and in heavy development!**
+> Currently the following syntax are finished: `Markdown`, `Python`, `JavaScript` and `Ruby`.
+
+------------------------------------------
+
+
 ## Introduction ##
 
 The color schemes are created so that the same code in different languages should look the same, with consistent color palettes.

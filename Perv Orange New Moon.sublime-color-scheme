@@ -153,22 +153,17 @@
         // },
         // {  // ZZZ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
         //     "name": "Magenta Test Scope",
-        //     "scope": "source meta.class punctuation.section",
+        //     "scope": "meta.function-call punctuation.section",
         //     "background": "var(perv_magenta)",
         //     "foreground": "var(perv_caret)"
         // }, // ZZZ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         // {  // ZZZ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
         //     "name": "Cyan Test Scope",
-        //     "scope": "entity.name.label",
+        //     "scope": "meta.function punctuation.section - meta.block",
         //     "background": "var(perv_cyan)",
         //     "foreground": "var(perv_caret)"
         // }, // ZZZ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        // { // integrate
-        //     "name": "ZZZ - Main: Classes & Namespaces",
-        //     "scope": "entity.name.namespace",
-        //     "foreground": "var(perv_classes)"
-        // },
-        { // integrate
+        { // ZZZ integrate
             "name": "ZZZ - Main: Inherited-Class & Class Parameters",
             "scope": "entity.other.inherited-class",
             "foreground": "var(perv_class_parameters)"
@@ -179,7 +174,7 @@
             "scope": "storage.type, support.type - support.type.exception - support.type.object - support.type.package - meta.function.return-type, variable.other.readwrite punctuation.definition.variable",
             "foreground": "var(perv_type_definitions)"
         },
-        { // integrate
+        { // ZZZ integrate
             "name": "ZZZ - Main Type Definition",
             "scope": "storage.modifier - meta.block - storage.modifier.array", // ZZZ Done
             "foreground": "var(perv_type_definitions)"
@@ -190,6 +185,17 @@
             "scope": "variable, entity.name.constant",
             "font_style": "bold"
         },
+        {
+            "name": "Main: Placeholder in Strings",
+            "scope": "string.quoted constant.other, string.quoted variable.other, string.quoted punctuation.definition.expression",
+            "foreground": "var(perv_foreground)"
+        },
+        {  // ZZZ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+            "name": "Magenta Test Scope",
+            "scope": "string.quoted punctuation.definition.expression",
+            "background": "var(perv_caret)",
+            "foreground": "var(perv_builtin_functions)"
+        }, // ZZZ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 // ZZZ ----------------------------------------------------
         {
             "name": "Main: String",
